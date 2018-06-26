@@ -1,0 +1,38 @@
+.bg-black {
+  background-color: black;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-35 {
+  height: 35px;
+}
+
+.h-70 {
+  height: 70px;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+#search{
+  display: flex;
+  background-color: white;
+  width: 40%;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
