@@ -20,8 +20,25 @@
   align-items: center;
 }
 
+.circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-image: url('../images/cart.png');
+  background-position: center;
+  background-size: 95%;
+}
+
 .margin-1 {
   margin: 0px 1%;
+}
+
+.ml-20 {
+  margin-left: 35px;
+}
+
+.m-dm {
+  margin-left: 15px; 
 }
 
 .h-80 {
@@ -30,6 +47,10 @@
 
 .h-35 {
   height: 35px;
+}
+
+.h-30 {
+  height: 30px;
 }
 
 .h-45 {
