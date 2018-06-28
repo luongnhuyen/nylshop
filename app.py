@@ -10,5 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+
+@app.route('/ao')
+def ao():
+    return render_template('items/ao.html')
+
 if __name__ == '__main__':
   app.run(debug=True)

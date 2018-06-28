@@ -1,23 +1,69 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <link rel="stylesheet" href="../../static/css/input.css">
-    <div class="bg-black w-100 h-70 center">
-      <div class="bg-white w-20 h-35">
+<div class="bg-black w-100 h-70 center">
+  <div class="bg-white w-20 h-35">
+  </div>
+  <div class="w-50 h-70 center">
+    <input class="search" placeholder="Tìm kiếm" name="search">
+    <button class="bg-white brr"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </div>
+  <div class="bg-white w-25 h-35">
+  </div>
+</div>
+
+<ul class="nav nav-tabs justify-content-center text-black">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" 
+           data-toggle="dropdown" 
+           href="#" role="button" 
+           aria-haspopup="true" 
+           aria-expanded="false">Áo
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="">Áo sơmi</a>
+          <a class="dropdown-item" href="#">Áo thun</a>
+          <a class="dropdown-item" href="#">Áo len</a>
+          <a class="dropdown-item" href="#">Áo khoác</a>
+          <a class="dropdown-item" href="#">Khác</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('ao')}}">All</a>
+        </div>
+      </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" 
+         data-toggle="dropdown" 
+         href="#" role="button" 
+         aria-haspopup="true" 
+         aria-expanded="false">Váy
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Đầm</a>
+        <a class="dropdown-item" href="#">Jum</a>
+        <a class="dropdown-item" href="#">Yếm</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">All</a>
       </div>
-      <div class="w-50 h-70 center">
-        <form id="search" class="center">
-          Search
-        </form>
-      </div>
-      <div class="bg-white w-25 h-35">
-      </div>
-    </div>
-    <div class="bg-grey w-100 h-50">
-    </div>
-  </body>
-</html>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Chân váy</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" 
+           data-toggle="dropdown" 
+           href="#" role="button" 
+           aria-haspopup="true" 
+           aria-expanded="false">Quần
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Quần dài</a>
+          <a class="dropdown-item" href="#">Quần lửng</a>
+          <a class="dropdown-item" href="#">Quần đùi</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">All</a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Giày/Dép</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Phụ kiện</a>
+      </li>
+  </ul>
