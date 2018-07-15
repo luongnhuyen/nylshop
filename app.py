@@ -5,6 +5,7 @@ from random import randint, choice
 from models.service import Service
 app = Flask(__name__)
 
+mlab.connect()
 
 @app.route('/')
 def index():

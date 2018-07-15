@@ -1,9 +1,9 @@
 import mongoengine
 
-# mongodb://<dbuser>:<dbpassword>@ds117200.mlab.com:17200/nylshop
+# mongodb://<dbuser>:<dbpassword>@ds139251.mlab.com:39251/nylshop
 
-host = "ds117200.mlab.com"
-port = 17200
+host = "ds139251.mlab.com"
+port = 39251
 db_name = "nylshop"
 user_name = "admin1"
 password = "admin1"
