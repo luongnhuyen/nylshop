@@ -44,7 +44,7 @@ def delete(service_id):
         service_to_delete.delete()
         return redirect(url_for('service'))
     else:
-        return "Service not found"
+        return render_template('service.html',all_service = all_service)
 
 if __name__ == '__main__':
   app.run(debug=True)
