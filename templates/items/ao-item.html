@@ -22,7 +22,7 @@
       </div>
     </div>
   </div> != 0 %}
-    {% for charity in all_charity %}
+    {% for ao in all_ao %}
 
     <div class="w-19 h-300 d-flex align-content-between flex-wrap">
         <div class="bg-black w-100 h-220"></div>
@@ -41,17 +41,17 @@
             <div class ="circle ml-20"> 
             </div>
             <!-- <button form="form_index" class="btn text-black h-30 m-dm" type="submit">Đặt mua</button> -->
-            <a href="{{charity.link}}" target="_blank" class="btn bg-gray text-red">Đặt mua</a>           
+            <a href="{{ao.link}}" target="_blank" class="btn bg-gray text-red">Đặt mua</a>           
           </div>
         </div>
       </div>
 
 
     <!-- <div class="card mb-3" style="width: 18rem;">
-      <img class="card-img-top" src="{{charity.picture}}" alt="Card image cap" height="300">
+      <img class="card-img-top" src="{{ao.picture}}" alt="Card image cap" height="300">
       <div class="card-body d-flex center flex-column">
-        <h5 class="card-title">{{charity.name}}</h5>
-        <a href="{{charity.link}}" target="_blank" class="btn bg-gray text-red">Tham gia</a>
+        <h5 class="card-title">{{ao.name}}</h5>
+        <a href="{{ao.link}}" target="_blank" class="btn bg-gray text-red">Tham gia</a>
       </div>
     </div> -->
     {% endfor %}
