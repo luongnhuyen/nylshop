@@ -45,7 +45,7 @@ def index():
 
 @app.route('/ao')
 def ao():
-    return render_template('page/ao.html')
+    return render_template('page/ao-item.html')
 
 @app.route('/new-service-input', methods= ["GET", "POST"])
 def new_service_input():
