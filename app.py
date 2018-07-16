@@ -32,6 +32,11 @@ def new_service_input():
         all_service = Service.objects()
         return render_template('service.html',all_service=all_service)
 
+@app.route('/service')
+def admin():
+    all_service = Service.objects()
+    return render_template('service.html',all_service = all_service)
+
 @app.route('/delete/<service_id>')
 def delete(service_id):
     service_to_delete = Service.objects.with_id(service_id)
