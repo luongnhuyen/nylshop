@@ -37,7 +37,7 @@ def delete(service_id):
     service_to_delete = Service.objects.with_id(service_id)
     if service_to_delete is not None:
         service_to_delete.delete()
-        return redirect(url_for('new-service-input'))
+        return redirect(url_for('service'))
     else:
         return "Service not found"
 
