@@ -33,7 +33,7 @@ def new_service_input():
         return render_template('service.html',all_service=all_service)
 
 @app.route('/service')
-def admin():
+def service():
     all_service = Service.objects()
     return render_template('service.html',all_service = all_service)
 
