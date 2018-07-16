@@ -24,6 +24,11 @@
           <td>{{service.price}}</td>
           <td>{{service.link}}</td>
           <td>{{service.picture}}</td>
+          <td>
+            <a href="#">Sua </a>
+            <br>
+            <a href="{{url_for('delete',service_id=service.id)}}">Xoa </a>
+          </td>
         </tr>
         {% endfor %}
       </tbody>

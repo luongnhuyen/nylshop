@@ -32,5 +32,14 @@ def new_service_input():
         all_service = Service.objects()
         return render_template('service.html',all_service=all_service)
 
+@app.route('/delete/<service_id>')
+def delete(service_id):
+    service_to_delete = Service.objects.with_id(service_id)
+    if service_to_delete is not None:
+        service_to_delete.delete()
+        return redirect(url_for('new-service-input'))
+    else:
+        return "Service not found"
+
 if __name__ == '__main__':
   app.run(debug=True)
